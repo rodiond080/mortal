@@ -1,0 +1,386 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #cbcbcb;
+}
+
+.admin-main{
+    /*display: flex;*/
+    /*justify-content: start;*/
+    /*align-items: start;*/
+    /*border: 4px solid slateblue;*/
+    width: 100%;
+    overflow: hidden;
+}
+
+.admin-main2-wrapper{
+    /*background-color: #686868;*/
+    /*border: 4px solid green;*/
+    float: right;
+    height: 100vh;
+    width: 100%;
+}
+
+.admin-main1{
+    background-color: #cbcbcb;
+    width: 250px;
+    /*padding-bottom: 10px;*/
+    float: left;
+    /*border: 4px solid salmon;*/
+    margin-right: -250px;
+    /*border: 1px solid blue;*/
+    /*border: 1px solid salmon;*/
+ }
+
+.admin-main2{
+     margin-left: 250px;
+     height: 100vh;
+
+     display: flex;
+     flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+ }
+
+.admin-main2-header{
+    line-height: 68px;
+    height: 75px;
+    color: #cbcbcb;
+    width: 100%;
+    background-color:#18232a;
+    border: 1px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-main2-header img{
+    position: absolute;
+}
+
+.admin-main2-content{
+    color: black;
+    /*border: 5px solid salmon;*/
+    height: 100vh;
+}
+
+.admin-media-a{
+
+}
+
+.sidebar{
+    position: fixed;
+    width: 250px;
+    margin-top: -24px;
+    background: #1f2c35;
+
+    height: 100%;
+    transition: all .5s;
+}
+
+.sidebar header {
+    user-select: none;
+    line-height: 70px;
+    width: 100%;
+    background: #18232a;
+    height: auto;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.sidebar ul a {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    font-size: 20px;
+    color: beige;
+    line-height: 65px;
+    padding-left: 40px;
+    border-top: 1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid black;
+}
+
+/*.sidebar ul li:hover a{*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    transition: 0.2s;*/
+/*    padding-left: 50px;*/
+/*}*/
+
+.admin-link:hover{
+
+}
+
+
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+#check{
+    display: none;
+    height: 0px;
+}
+
+label #btn{
+    display: none;
+}
+
+label #cancel{
+    display: none;
+}
+
+.admin-news-content{
+    border: 2px solid salmon;
+}
+
+/*///////////////////////////////////////drag-and-drop*/
+#admin-drop-area{
+    border: 2px solid #37504f;
+    border-radius: 20px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+#admin-drop-area.highlight{
+    border-color: purple;
+    background-color: #b4b4b4;
+}
+
+.admin-drop-form p{
+    /*margin-bottom: 10px;*/
+}
+
+.admin-drop-form{
+    display: flex;
+    /*flex-direction: column;*/
+    text-align: center;
+    justify-content: center;
+
+    height: 150px;
+}
+
+.admin-news-edit-picture-del-button{
+    width: 25px;
+    height: 25px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 5px;
+    float: right;
+
+    opacity: .7;
+    cursor: pointer;
+    background-color: #1f2c35;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-news-edit-picture-del-button:hover{
+    background-color: #37586e;
+    opacity: .9;
+
+}
+
+
+.admin-news-edit-picture-div{
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    transition: .5s;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.admin-news-edit-x{
+    width: 15px;
+    height: 15px;
+    transition: .5s;
+    background: url("/public/images/front/close-icon-29.png");
+    background-size: auto 100%;
+}
+.admin-news-edit-x:hover{
+    transform: rotate(90deg);
+}
+
+
+#admin-drop-input{
+    display: none;
+    width: 100%;
+    border-radius: 22px;
+    position: absolute;
+    /*margin-left: -16px;*/
+    /*margin-top: 10px;*/
+    height: 100%;
+    opacity:0;
+    /*border: 1px solid salmon;*/
+
+
+    /*position: absolute;*/
+    /*z-index: -10;*/
+}
+
+.admin-drop-button-wrapper{
+    /*flex: auto;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*height: 100%;*/
+    /*position: relative;*/
+    /*border: 2px solid salmon;*/
+    /*margin-top: 10px;*/
+    /*width: 560px;*/
+}
+
+.admin-drop-inscription{
+    /*border: 1px solid #456ccc;*/
+}
+
+.admin-drop-button{
+    /*background: #ccc;*/
+    cursor: pointer;
+    font-weight: bold;
+    /*border: 1px solid #456ccc;*/
+    margin-top: 9px;
+
+
+    /*height: auto;*/
+    /*position: relative;*/
+}
+
+.admin-drop-button:hover{
+    /*background: #ddd;*/
+    color: white;
+    text-decoration: underline;
+}
+
+
+#gallery {
+    /*margin-top: 10px;*/
+    /*border: 1px solid darkorange;*/
+
+    /*display: flex;*/
+    /*flex-direction: row;*/
+}
+
+#gallery img {
+    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*//////////////////end/////////////////////////drag-and-drop*/
+
+.admin-news-edit-picture-box{
+    border: 1px solid salmon;
+    width: 160px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+/*gigs drag and drop ////////////////////////////////////////*/
+.admin-gigs-drop-form{
+    border: 1px solid salmon;
+    width: 100%;
+    /*height: 100%;*/
+}
+
+#admin-gigs-drop-area{
+    border: 1px solid #69fa39;
+    width: 100%;
+    float: left;
+}
+
+#admin-gigs-drop-input{
+    border: 0px solid #1f2efa;
+    float: left;
+}
+
+
+
+
+@media screen and (max-width: 576px){
+    .sidebar{
+        width: 250px;
+        left: -250px;
+    }
+
+    .sidebar ul li:hover a{
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+        padding-left: 50px;
+    }
+
+    .sidebar ul a i{
+        margin-right: 16px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: #042331;
+        border-radius: 3px;
+        transition: all .5s;
+    }
+
+    label #btn{
+        left: 20px;
+        top:25px;
+        color: beige;
+        display: block;
+        font-size: 35px;
+        padding: 6px 12px;
+        border:1px solid transparent;
+    }
+
+    label #cancel{
+        z-index: 11;
+        border:1px solid transparent;
+        left: 20px;
+        top:25px;
+        opacity: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        width: 57px;
+        height: 49px;
+        font-size: 30px;
+        color: beige;
+        padding: 6px 12px;
+    }
+
+    #check:checked ~.sidebar{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn{
+        left: 250px;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    #check:checked ~ label #cancel{
+        left: 250px;
+        opacity: 1;
+    }
+}
